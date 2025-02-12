@@ -6,10 +6,10 @@ document.getElementById("downloadCv").addEventListener("click", descargarCV);
 
 // Función para descargar el CV
 function descargarCV() {
-    const cvUrl = "CVArielOmarBustosSuazo.pdf";
+    const cvUrl = "CV-Ariel-Omar-Bustos-Suazo.pdf";
     const link = document.createElement("a");
     link.href = cvUrl;
-    link.download = "CVArielOmarBustosSuazo.pdf";
+    link.download = "CV-Ariel-Omar-Bustos-Suazo.pdf";
     
     document.body.appendChild(link);
     link.click();

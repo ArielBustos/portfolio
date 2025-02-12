@@ -17,8 +17,10 @@
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#Certificado" onclick="seleccionar()">CERTIFICADO</a></li>
+                    <li><a href="#fortalezas" onclick="seleccionar()">FORTALEZAS</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -75,7 +77,6 @@
                       
                     </ul>
                 </div>
-
                 <!-- intereses -->
                 <div class="col">
                     <h3>Intereses</h3>
@@ -106,35 +107,16 @@
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>            
-            <script>
-                document.getElementById("downloadCv").addEventListener("click", function () {
-                    // Ruta del archivo CV (ajusta según tu estructura)
-                    const cvUrl = "CVArielOmarBustosSuazo.pdf";
-                    
-                    // Crear un enlace invisible
-                    const link = document.createElement("a");
-                    link.href = cvUrl;
-                    link.download = "CVArielOmarBustosSuazo.pdf";
-                    
-                    // Simular un clic para iniciar la descarga
-                    document.body.appendChild(link);
-                    link.click();
-                    
-                    // Eliminar el enlace después de la descarga
-                    document.body.removeChild(link);
-                });
-            </script>    
         </div>
     </section>
-
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2>Habilidades</h2>
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
+                    <h3>Habilidades técnicas</h3>
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
@@ -178,7 +160,7 @@
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Professional Skills</h3>
+                    <h3>Habilidades profesionales</h3>
                     <div class="skill">
                         <span>Comunicación</span>
                         <div class="barra-skill">
@@ -248,14 +230,33 @@
                             <div class="circuloi"></div>
                         </div>
                     </div>
-                    <div class="item izq">
+                    
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
                         <h4>Analista Programador</h4>
-                        <span class="casa">Instituto Profesional INACAP</span>
-                        <span class="fecha">2021 - 2022</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+                        <span class="casa">Finning Cat</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>Diseñé y desarrollé una aplicación móvil para la gestión de asistencia en contratos mineros, permitiendo un registro eficiente y automatizado del personal. La aplicación ofrece a los técnicos la posibilidad de visualizar su porcentaje de asistencia y realizar solicitudes de cambio de turno.
+                            Además, llevé a cabo un análisis en el área de minería, donde definí procesos, desarrollé documentación técnica y gestioné otros aspectos clave relacionados con la implementación y uso de la aplicación.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CERTIFICADO -->
+
+    <section id="Certificado" class="Certificado">
+        <div class="contenido-seccion">
+            <h2>Certificados</h2> <br>
+            <div class="fila">
+                <div class="col izquierda">
                     <div class="item izq">
                         <h4>English for Developers & IT
                             Professionals
@@ -279,7 +280,7 @@
                     <div class="item izq">
                         <h4>IT Essentials</h4>
                         <span class="casa">Instituto Profesional INACAP</span>
-                        <span class="fecha">2021 - 2021</span>
+                        <span class="fecha">2021 - 2025</span>
                         <p>Certificado de instalación, configuración, mantenimiento y solución de problemas de hardware y software</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
@@ -288,30 +289,36 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>CERTIFICADO EN ARQUITECTURA CLOUD</h4>
+                        <span class="casa">Instituto Profesional INACAP</span>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>INACAP corrobora que ha completado todos los requerimientos para la
+                            obtención del certificado en ARQUITECTURA CLOUD
+                            </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>CERTIFICADO EN DESARROLLADOR FULL STACK</h4>
+                        <span class="casa">Instituto Profesional INACAP</span>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>INACAP corrobora que ha completado todos los requerimientos para la
+                            obtención del certificado en DESARROLLADOR FULL STACK
+                            </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>CERTIFICADO EN DISEÑO Y GESTIÓN DE BASE DE
+                            DATOS
+                            </h4>
+                        <span class="casa">Instituto Profesional INACAP</span>
+                        <span class="fecha">2021 - 2025</span>
+                        <p>INACAP corrobora que ha completado todos los requerimientos para la
+                            obtención del certificado en DISEÑO Y GESTIÓN DE BASE DE DATOS</p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -320,19 +327,54 @@
             </div>
         </div>
     </section>
+    <section id="fortalezas" class="fortalezas">
+        <div class="contenido-seccion">
 
-
+            <div class="fila">
+                <!-- datos personales -->
+                
+                <!-- intereses -->
+                <div class="col">
+                    <h2>FORTALEZAS</h2>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid "></i>
+                            <span>ANALITICO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid "></i>
+                            <span>PLANIFICACIÓN </span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid "></i>
+                            <span> ORDEN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid "></i>
+                            <span> AUTO-CONFIANZA</span>
+                        </div>
+                       
+                        <div class="interes">
+                            <i class="fa-solid"></i>
+                            <span>PERSEVERENACIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid"></i>
+                            <span>VISIÓN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
     <!-- footer -->
     <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
+            <a href="https://www.linkedin.com/in/ariel-bustos-suazo-732bb5273/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/ArielBustos"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
 
