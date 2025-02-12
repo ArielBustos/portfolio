@@ -12,17 +12,13 @@
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
-            <div class="logo">
-                <a href="#">Nick</a>
-            </div>
+        
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Habilidades</a></li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -35,16 +31,15 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.png" alt="">
+                <img src="img/image.png" alt="">
             </div>
-            <h1>NICK PEREZ</h1>
-            <h2>Ingeniero de Software - Experto UI/UX</h2>
+            <h1>Ariel Bustos</h1>
+            <h2>Ingeniero informatico - Analista programador</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="https://www.linkedin.com/in/ariel-bustos-suazo-732bb5273/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/ArielBustos"><i class="fa-brands fa-github"></i></a>
+
+             
             </div>
         </div>
     </section>
@@ -53,7 +48,7 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Nick Perez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+            <p><span>Hola, soy Ariel Bustos.</span> Una persona responsable, organizada y comprometida con mi trabajo. Me esfuerzo constantemente por mejorar y aprender, siempre disponible para adquirir nuevos conocimientos. Mi dedicación y compromiso aseguran que cada tarea se realice con la máxima eficiencia y calidad. Me apasiona la programación y tomo cada ejercicio como un desafío personal, buscando siempre la mejor solución y la optimización del proceso. Aspiro a contribuir con mis habilidades en una empresa innovadora, donde pueda seguir creciendo profesionalmente y aportar soluciones tecnológicas de alta calidad.</p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -62,28 +57,22 @@
                     <ul>
                         <li>
                             <strong>Cumpleaños</strong>
-                            15-01-1980
+                            26-10-2002
                         </li>
                         <li>
                             <strong>Teléfono</strong>
-                            2555 5454545
+                            9 45706751
                         </li>
                         <li>
-                            <strong>Email</strong>
-                            cw@example.com
+                            <strong>Correo</strong>
+                            ariel.obustoss@gmail.com
                         </li>
-                        <li>
-                            <strong>Website</strong>
-                            www.example.com
-                        </li>
+                       
                         <li>
                             <strong>Dirección</strong>
-                            123 San Luis, Argentina
+                            Renca, Region Metropolitana
                         </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
+                      
                     </ul>
                 </div>
 
@@ -99,38 +88,42 @@
                             <i class="fa-solid fa-headphones"></i>
                             <span>MUSICA</span>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>MAC OS</span>
-                        </div>
+                       
                         <div class="interes">
                             <i class="fa-solid fa-person-hiking"></i>
                             <span>DEPORTE</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-book"></i>
-                            <span>LIBROS</span>
-                        </div>
-                        <div class="interes">
                             <i class="fa-solid fa-car"></i>
                             <span>AUTOS</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
                         </div>
                         
                     </div>
                 </div>
             </div>
-            <button>
+           
+            <button id="downloadCv">
                 Descargar CV <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
-            </button>
+            </button>            
+            <script>
+                document.getElementById("downloadCv").addEventListener("click", function () {
+                    // Ruta del archivo CV (ajusta según tu estructura)
+                    const cvUrl = "CVArielOmarBustosSuazo.pdf";
+                    
+                    // Crear un enlace invisible
+                    const link = document.createElement("a");
+                    link.href = cvUrl;
+                    link.download = "CVArielOmarBustosSuazo.pdf";
+                    
+                    // Simular un clic para iniciar la descarga
+                    document.body.appendChild(link);
+                    link.click();
+                    
+                    // Eliminar el enlace después de la descarga
+                    document.body.removeChild(link);
+                });
+            </script>    
         </div>
     </section>
 
@@ -146,7 +139,7 @@
                         <span>Javascript</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>75%</span>
+                                <span>50%</span>
                             </div>
                         </div>
                     </div>
@@ -159,23 +152,23 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Photoshop</span>
+                        <span>Git y GitHub</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>95%</span>
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Wordpress</span>
+                        <span>Python</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>81%</span>
+                                <span>75%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Drupa</span>
+                        <span>SQl</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>55%</span>
@@ -190,7 +183,7 @@
                         <span>Comunicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>80%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
@@ -198,7 +191,7 @@
                         <span>Trabajo en Equipo</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>70%</span>
+                                <span>80%</span>
                             </div>
                         </div>
                     </div>
@@ -206,7 +199,7 @@
                         <span>Creatividad</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>99%</span>
+                                <span>70%</span>
                             </div>
                         </div>
                     </div>
@@ -214,12 +207,12 @@
                         <span>Dedicación</span>
                         <div class="barra-skill">
                             <div class="progreso">
-                                <span>65%</span>
+                                <span>90%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Proyect Management</span>
+                        <span>autoaprendizaje </span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>94%</span>
@@ -238,29 +231,56 @@
             <div class="fila">
                 <div class="col izquierda">
                     <h3>Educación</h3>
+                    
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Ingeniero informatico</h4>
+                        <span class="casa">Instituto Profesional INACAP</span>
+                        <span class="fecha">2021 - 2024</span>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Analista Programador</h4>
+                        <span class="casa">Instituto Profesional INACAP</span>
+                        <span class="fecha">2021 - 2022</span>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <h4>Analista Programador</h4>
+                        <span class="casa">Instituto Profesional INACAP</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>English for Developers & IT
+                            Professionals
+                            </h4>
+                        <span class="casa">Desafios Latam</span>
+                        <span class="fecha">2025 - 2025</span>
+                        <p>Certificado "inglés para Desarrolladores y Profesionales de Tl", mejorando mis habilidades en lenguaje técnico y comunicación en el ámbito tecnológico.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Introducción al Desarrollo Web</h4>
+                        <span class="casa">Desafios Latam</span>
+                        <span class="fecha">2025 - 2025</span>
+                        <p>Certificado de Introducción al Desarrollo Web donde aprendí a utilizar Git y GitHub</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>IT Essentials</h4>
+                        <span class="casa">Instituto Profesional INACAP</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Certificado de instalación, configuración, mantenimiento y solución de problemas de hardware y software</p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -301,97 +321,6 @@
         </div>
     </section>
 
-    <!-- SECCION PORTFOLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- footer -->
     <footer>
